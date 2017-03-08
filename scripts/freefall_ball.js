@@ -13,6 +13,7 @@ window.onload = function () {
             disY = ev.clientY - nina.offsetTop;
             prevX = ev.clientX;
             prevY = ev.clientY;
+            clearInterval(timer);
             document.onmousemove = function (ev) {
                 var ev = ev||window.event;
                 nina.style.left = ev.clientX - disX + 'px';
